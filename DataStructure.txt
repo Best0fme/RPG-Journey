@@ -1,37 +1,25 @@
-Characters:
+Specification.
 
-	Hero(Warrior)
-	Vendors
-	Mobs(Neutral, Agro)
-	Crafters?(Maybe it should be the heroes ability)
-	
-Waypoints:
-	
-	Home(Some way to split points based on future classes)
-	Cities
-	Neutral camps
-	Dungeons(Need to think is there is really need in it, and for what)
-	
-Personal specific:
-	
-	Hero:
-		LVL
-		HP
-		Stamina
-		Weight(Will be used to analize amount of items and gold in bag)
-		Faith(Can be used for special abilities)
-		Age
-		
-	Mobs:
-		LVL
-		HP
-		Weakness
-		Specification(Some additional skills)
-		
-Timeline :
-	
-	Move will spend some time,
-	Also need to split day into hours and use growing value with age of hero and world history
-	Need to set heroes max age(maybe based on class or start point)
-	Need to set time point for quests
-	
+Creature attributes:
+	Health
+	Mana
+	Dmg
+	Absorb
+
+Herro attributes:
+	all from Creature
+	Stamina
+
+Mercenaries attributes:
+	all from Creature
+
+Item attributes:
+	Health
+	Mana
+	Stamina
+	Dmg
+	Absorb
+	Attack
+	Deffence
+
+
