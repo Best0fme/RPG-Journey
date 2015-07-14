@@ -5,6 +5,7 @@ class Creature(Object):
     _mana = "100"
 	_dmg = "100"
 	_absorb = "100"
+
     pass
 
 class Herro(Creature, Bag):
@@ -22,7 +23,18 @@ class Herro(Creature, Bag):
     pass
 
 class Bag(Object):
-    _articles = []
+    _articles_off = []
+    _articles_on = []
+
+    def wear_item(self, item_index):
+       __value = self._articles_off[item_index].pop
+        self._articles_on.append(__value)
+
+
+    def strip_item(self, item_index):
+        __value = self._articles_on[item_index].pop
+        self.articles_off.append(__value)
+
     pass
 
 
@@ -35,4 +47,5 @@ class Item(Object):
         self._stamina = stamina
         self._attack = attack
         self._defence = defence
+
     pass
