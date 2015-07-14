@@ -6,7 +6,7 @@ Creature attributes:
 	Dmg
 	Absorb
 
-Herro attributes:
+Hero attributes:
 	all from Creature
 	Stamina
 
