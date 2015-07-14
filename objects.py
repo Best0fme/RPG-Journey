@@ -9,8 +9,17 @@ class Creature(Object):
 
 class Herro(Creature, Bag):
     _stamina = "100"
-    pass
 
+
+    def minus_stamina(self, value):
+        self._stamina -= value
+
+
+
+    def refill_stamina(self, value):
+            self._stamina += value
+
+    pass
 
 class Bag(Object):
     _articles = []
