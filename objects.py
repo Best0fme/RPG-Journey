@@ -6,7 +6,7 @@ class Creature(object):
     def refill_health(self, health):
         self._health += health
 
-    def __init__(self, health = 0, mana = 0, dmg = 0, absorb = 0):
+    def __init__(self, health=0, mana=0, dmg=0, absorb=0):
         self._health = health
         self._mana = mana
         self._dmg = dmg
@@ -33,13 +33,13 @@ class Hero(Creature, Bag):
     def refill_stamina(self, value):
             self._stamina += value
 
-    def __init__(self, health = 0, mana = 0, dmg = 0, absorb = 0, stamina = 0):
+    def __init__(self, health=0, mana=0, dmg=0, absorb=0, stamina=0):
         Creature.__init__(self, health, mana, dmg, absorb)
         self._stamina = stamina
 
 
 class Item(object):
-    def __init__(self, health = 0, mana = 0, dmg = 0, absorb = 0, stamina = 0, attack = 0, defence = 0):
+    def __init__(self, health=0, mana=0, dmg=0, absorb=0, stamina=0, attack=0, defence=0):
         self._health = health
         self._mana = mana
         self._dmg = dmg
@@ -47,3 +47,6 @@ class Item(object):
         self._stamina = stamina
         self._attack = attack
         self._defence = defence
+    pass
+
+creatores = {'', []}
