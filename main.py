@@ -1,5 +1,5 @@
 from environment import create_creatures, creature_dictionary, \
-    hero_dictionary, create_hero, return_creature, fight
+    hero_dictionary, create_hero, return_creature, fight, return_hero
 
 def ask_and_create(creature_type):
     def check_int(value):
@@ -17,7 +17,7 @@ def ask_and_create(creature_type):
         while True:
             value = raw_input("What {0} {1} will have?\n".format(value_type, creature_type.lower()))
             if check_int(value):
-                value_dict[value_type] = value
+                value_dict[value_type] = int(value)
                 break
     if creature_type == "Creature":
         create_creatures(value_dict)
@@ -25,8 +25,7 @@ def ask_and_create(creature_type):
         create_hero(value_dict)
 
 def print_fight():
-    creature = return_creature("1")
-    fight(creature)
+    fight(return_creature("1"), return_hero())
 
 
 def main():

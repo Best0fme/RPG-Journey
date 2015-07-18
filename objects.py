@@ -1,6 +1,7 @@
-#This file will contain object structures
+# This file will contain object structures
 class Skill(object):
     current_cool_down = 0
+
     def __init__(self, dmg=0, cool_down=0):
         self._dmg = dmg
         self._cool_down = cool_down
@@ -26,7 +27,8 @@ class Skill(object):
             return self.calc_damage()
         else:
             self.move_cool_down()
-            return None
+            return 0
+
 
 class Creature(object):
     def __init__(self, health=0, mana=0, dmg=0, absorb=0):
@@ -49,7 +51,6 @@ class Creature(object):
 
     def skills(self):
         return self._skills
-
 
 
 class Bag(object):
